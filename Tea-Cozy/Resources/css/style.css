@@ -1,0 +1,145 @@
+body{
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  margin: 0;
+  opacity: 0.9;
+  text-align: center;
+  align-items: center;
+}
+
+h2, h3, h4{
+  padding: 10px;
+  margin: 0;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+/* Header */
+header{
+  width: 100%;
+  height: 69px;
+  z-index: 1;
+  position: fixed;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-bottom: 1px solid seashell;
+  background: black;
+}
+
+.logo img{
+  height: 50px;
+  align-items: left;
+  margin-left: 10px;
+}
+
+nav{
+  flex-grow: 1;
+  text-align: right;
+}
+
+nav span{
+  padding: 20px 10px;
+}
+
+.main-nav a{
+  color: seashell;
+}
+
+.main-nav a:hover{
+  text-decoration: none;
+}
+
+/* Banner */
+.banner{
+  width: 1200px;
+  height: 700px;
+  justify-content: center;
+  padding-top: 70px;
+  margin: auto;
+  background-image: url('../../resources/images/mission-background.jpg');
+}
+
+.banner-text{
+  width: 100%;
+  background: black;
+}
+
+/* Middle Content */
+.tea-month{
+  width: 1000px;
+  padding: 70px 0px;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.tea-types{
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.item{
+  width: 300px;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.item img{
+  width: 300px;
+  height: 200px;
+  padding-bottom: 10px;
+}
+
+.tea-month h2, .tea-month h3{
+  width: 100%;
+}
+
+
+/* Locations */
+.locations {
+  width: 1200px;
+  height: 500px;
+  padding-top: 75px;
+  margin: auto;
+  background-image: url('../../resources/images/locations-background.jpg');
+}
+
+.column{
+  justify-content: center;
+  align-items: center;
+}
+
+.location{
+  width: 300px;
+  height: 280px;
+  background: black;
+  padding-top: 15px;
+  margin: 15px 40px 0px 0px;
+  opacity: 1;
+}
+
+/* Footer */
+.footer{
+  height: 200px;
+}
+
+#copyright{
+  text-align: left;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 1200px){
+  .banner, .tea-month, .locations{
+    width: 100%;
+  }
+  .location{
+    height: auto;
+    width: 100%;
+    font-size: 18px;
+  }
+}
